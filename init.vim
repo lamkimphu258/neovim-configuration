@@ -130,11 +130,6 @@ let g:php_auto_namespacer_map = {
 \   'src/': 'App'
 \}
 
-" Coc 
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
-" unicode characters in the file autoload/float.vim
-set encoding=utf-8
-
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -299,3 +294,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " PHP CS Fixer
 autocmd BufWritePost *.php :call CocAction('format')
+
+" PHPActor
+nnoremap <leader>i :CocAction quickfix.import_class
