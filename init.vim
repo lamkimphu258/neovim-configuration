@@ -74,6 +74,8 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'd3jn/php-auto-namespacer.vim'
 
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 set nu
