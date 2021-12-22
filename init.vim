@@ -305,6 +305,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " PHPActor
+autocmd FileType php set iskeyword+=$
 nnoremap <leader>i :CocAction quickfix.import_class
 nnoremap <leader>ci :CocAction 
 nnoremap <leader>fc :Format<cr>
