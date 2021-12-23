@@ -35,6 +35,8 @@ let g:coc_global_extensions = [
     \'coc-css',
     \'coc-php-cs-fixer',
     \'coc-phpactor',
+    \'coc-phpls',
+    \'coc-psalm',
     \'coc-json', 
     \'coc-git',
     \'@yaegassy/coc-phpstan',
@@ -128,7 +130,7 @@ autosave.setup(
         write_all_buffers = false,
         on_off_commands = true,
         clean_command_line_interval = 0,
-        debounce_delay = 1500
+        debounce_delay = 1000
     }
 )
 EOF
