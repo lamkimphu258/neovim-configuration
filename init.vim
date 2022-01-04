@@ -23,8 +23,10 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall
 endif
 
-" Install coc gloal extensions
+" Install coc global extensions
 let g:coc_global_extensions = [
+    \'coc-snippets',
+    \'coc-spell-checker',
     \'coc-prettier',
     \'coc-yaml',
     \'coc-emmet',
@@ -41,6 +43,7 @@ let g:coc_global_extensions = [
     \'coc-git',
     \'@yaegassy/coc-phpstan',
     \'coc-tsserver',
+    \'coc-sql',
 \]
 
 " Coc extensions configuration
@@ -246,7 +249,7 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>af  <Plug>(coc-fix-current)
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
@@ -308,8 +311,8 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " PHPActor
 autocmd FileType php set iskeyword+=$
-nnoremap <leader>i :CocAction quickfix.import_class
-nnoremap <leader>ci :CocAction 
+nnoremap <leader>i :CocAction quickfix.import_class<cr>
+nnoremap <leader>ci :CocAction<cr>
 nnoremap <leader>fc :Format<cr>
 
 " Prettier

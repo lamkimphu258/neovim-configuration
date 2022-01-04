@@ -4,6 +4,9 @@
   },
   "php-cs-fixer": {
     "enableFormatProvider": true,
-    "rules": "@PSR12,ordered_imports,no_unused_imports"
-  }
+    "rules": "@PSR12,@PhpCsFixer,@Symfony,@DoctrineAnnotation,@PHP81Migration"
+  },
+  "cSpell.userWords": [
+    "Symfony"
+  ]
 }
