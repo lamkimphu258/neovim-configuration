@@ -70,7 +70,7 @@ Plug 'StanAngeloff/php.vim'
 
 Plug 'jiangmiao/auto-pairs'
 
-Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 Plug 'Pocco81/AutoSave.nvim'
 
@@ -91,11 +91,15 @@ Plug 'jparise/vim-graphql'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
+Plug 'honza/vim-snippets'
+
+Plug 'nelsyeung/twig.vim'
+
 call plug#end()
 
 set nu
 set background=dark
-colorscheme gruvbox
+colorscheme dracula
 
 " NERDTree Configuration
 let NERDTreeShowHidden=1
