@@ -74,8 +74,6 @@ Plug 'StanAngeloff/php.vim'
 
 Plug 'jiangmiao/auto-pairs'
 
-Plug 'dracula/vim', { 'as': 'dracula' }
-
 Plug 'Pocco81/AutoSave.nvim'
 
 Plug 'junegunn/fzf.vim'
@@ -99,11 +97,15 @@ Plug 'honza/vim-snippets'
 
 Plug 'nelsyeung/twig.vim'
 
+" Themes
+Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
+
 call plug#end()
 
 set nu
 set background=dark
-colorscheme dracula
+colorscheme gruvbox
 
 " NERDTree Configuration
 let NERDTreeShowHidden=1
