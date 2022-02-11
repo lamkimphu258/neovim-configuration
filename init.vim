@@ -44,6 +44,10 @@ let g:coc_global_extensions = [
     \'@yaegassy/coc-phpstan',
     \'coc-tsserver',
     \'coc-sql',
+    \'coc-python',
+    \'coc-go',
+    \'coc-golines',
+    \'coc-java',
 \]
 
 " Coc extensions configuration
